@@ -1,6 +1,5 @@
 import Link from "next/link";
 
-
 export default function Page() {
   return (
     <main>
@@ -10,7 +9,7 @@ export default function Page() {
         <p> Course Section: CPRG 306 A</p>
       </div>
 
-      <div class="items-center justify-between font-mono">
+      <div class="font-mono">
       <Link href="https://github.com/edwardmontilla/cprg306-assignments">https://github.com/edwardmontilla/cprg306-assignments</Link>
       
       {"\n"}
