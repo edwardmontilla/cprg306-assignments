@@ -13,7 +13,7 @@ export default function Page() {
       <Link href="https://github.com/edwardmontilla/cprg306-assignments">https://github.com/edwardmontilla/cprg306-assignments</Link>
       
       {"\n"}
-      <Link href="week2">{"-->"}{"\n"}Week 2</Link>
+      <Link href="week2">{"\n"}Week 2</Link>
       </div>
 
     </main>
