@@ -10,10 +10,15 @@ export default function Page() {
       </div>
 
       <div class="font-mono">
-      <Link href="https://github.com/edwardmontilla/cprg306-assignments">https://github.com/edwardmontilla/cprg306-assignments</Link>
+        <Link href="https://github.com/edwardmontilla/cprg306-assignments">https://github.com/edwardmontilla/cprg306-assignments</Link>
       
-      {"\n"}
-      <Link href="/week2">{"\n"}Week 2</Link>
+      <ul>
+        <Link href="/week2">{"\n"}Week 2</Link>
+      </ul>
+      <ul>
+      <Link href="/week3">{"\n"}Week 3</Link>
+      </ul>
+      
       </div>
 
     </main>
