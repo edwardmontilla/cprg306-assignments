@@ -1,8 +1,11 @@
 
-function Item () {
+export default function Item ({ name, quantity, category }) {
     return (
-        <div className="item"></div>
+        <div>
+            <p>Name {name}</p>
+            <p>Quantity {quantity}</p>
+            <p>Category {category}</p>
+        </div>
 
-
-    )
+    );
 }
