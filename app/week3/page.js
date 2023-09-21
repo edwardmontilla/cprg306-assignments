@@ -6,6 +6,7 @@ export default function Page() {
     return (
 
         <main class="bg-gray-900">
+            
             <div class="flex items-center justify-center p-3 pt-10 mb-9">
                 <h1 class="text-5xl font-sans">Shopping List</h1>
                 
@@ -19,7 +20,6 @@ export default function Page() {
                 <Link href="/">Home</Link></button>
  
             </div>
-
 
         </main>
     )   
