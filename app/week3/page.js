@@ -11,7 +11,7 @@ export default function Page() {
                 <h1 class="text-5xl font-sans">Shopping List</h1>
                 
             </div>
-            <div class="font-medium text-white">
+            <div class="font-medium pb-20 text-white">
                 <ItemList />
             </div>
 
