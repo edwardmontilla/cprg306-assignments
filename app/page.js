@@ -18,7 +18,7 @@ export default function Page() {
             <Link href="https://github.com/edwardmontilla/cprg306-assignments">https://github.com/edwardmontilla/cprg306-assignments</Link>
           </div>
 
-          <div class="flex-container mt-5">
+          <div class="flex-container mt-5 shrink w-14">
           
             <ul class="mb-2 hover:underline underline-offset-2">
               <Link href="/week2">{"\n"}Week 2</Link>
