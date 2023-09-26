@@ -32,15 +32,15 @@ export default function NewItem() {
     
 
     return (
-                            /* use <input> inside <label> and <select> for drop down,
+                            /* use <input> inside <label> and <option> inside <select> for drop down,
                                 use <button> AND add (tag)="type" or "submit" */
                             
         <main>
 
-            <div class="flex justify-center bg-gray-900 min-h-full">
+            <div class="bg-gray-900 min-h-full flex justify-center">
     
-                <div>
-                    <h1>New Item</h1>
+                <div class="w-full max-w-md bg-white p-8 rounded-lg shadow-md">
+                    
                 </div>
 
             </div>
