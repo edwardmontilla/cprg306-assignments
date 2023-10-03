@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <main class="h-screen bg-gray-900">
+    <main class="h-screen bg-sky-950">
 
       <div class="flex font-sans justify-center">
         <div>
@@ -28,6 +28,11 @@ export default function Page() {
             </ul>  
             <ul class="mb-2 hover:underline underline-offset-2">  
               <Link href="/week4">{"\n"}Week 4</Link>
+            </ul>
+            <ul class="mb-2 hover:underline underline-offset-2">  
+              <Link href="/week5">{"\n"}Week 5</Link>
+            </ul><ul class="mb-2 hover:underline underline-offset-2">  
+              <Link href="/week6">{"\n"}Week 6</Link>
             </ul>
 
           </div>
