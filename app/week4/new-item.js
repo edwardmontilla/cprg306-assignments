@@ -5,8 +5,8 @@ import { useState } from "react";
 
 export default function NewItem() {
     const [name, setName] = useState("");
-    const [quantity , setQuantity] = useState("");
-    const [category, setCategory] = useState("");
+    const [quantity , setQuantity] = useState("1");
+    const [category, setCategory] = useState("Produce");
     const [itemCreated, setItemCreated] = useState(false);
 
     const handleSubmit = (event) => { event.preventDefault();
@@ -37,7 +37,6 @@ export default function NewItem() {
     return (
                             
         <main>
-
             <div>
                 {itemCreated && (
                     <div className="absolute top-0 mt-7 font-sans text-slate-100 text-2xl">
@@ -45,10 +44,12 @@ export default function NewItem() {
                     </div>
                 )}
 
-                <div className="h-full bg-sky-950">
+                <div className="min-h-screen bg-sky-950">
                     <div className="flex justify-center">
                         <div className="w-full max-w-md bg-gray-600 border-2 border-gray-500 p-7 rounded-lg shadow-md mt-10">
-                            <form>
+
+                            <form onSubmit={handleSubmit}>
+
                                 <div className="font-sans pb-7">
 
                                     <h1 className="text-slate-100 text-3xl text-gray-800 font-sans mb-5">Add New Item</h1>
@@ -92,9 +93,11 @@ export default function NewItem() {
                                             onChange={handleQuantityChange}
                                         />
 
-                                    </div>    
+                                    </div>
 
-                                    <button type="submit" className="bg-slate-700 hover:bg-slate-500 text-slate-100 border-zinc-300 p-2 ml-1 border rounded-md w-15">
+                                    <button
+                                        type="submit"
+                                        className="bg-slate-700 hover:bg-slate-500 text-slate-100 border-zinc-300 p-2 ml-1 border rounded-md w-15">
                                         Add
                                     </button>
 
