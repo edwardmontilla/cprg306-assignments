@@ -39,7 +39,7 @@ export default function NewItem() {
         <main>
             <div>
                 {itemCreated && (
-                    <div className="absolute top-0 mt-7 font-sans text-slate-100 text-2xl">
+                    <div className="bg-sky-900 absolute top-0 mt-7 font-sans text-slate-100 text-2xl">
                         Item Created!
                     </div>
                 )}
