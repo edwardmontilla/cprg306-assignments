@@ -62,10 +62,10 @@ export default function NewItem() {
 
                                 <div className="font-sans pb-7">
 
-                                    <h1 className="text-slate-100 text-3xl text-gray-800 font-sans mb-5">Add New Item</h1>
+                                    <h1 className="text-slate-100 text-3xl font-sans mb-5">Add New Item</h1>
 
                                     <div>
-                                        <p className="text-slate-100 text-m text-gray-800 mb-1">Select Category</p>
+                                        <p className="text-slate-100 text-m mb-1">Select Category</p>
 
                                         <select className="text-gray-800 p-1 mb-7 border-zinc-400 border-2 rounded-md"
                                             value={category}
@@ -83,7 +83,7 @@ export default function NewItem() {
                                                 <option value="Other">Other</option>
                                         </select>
 
-                                        <p className="text-slate-100 text-m text-gray-800">Enter Item Name:</p>
+                                        <p className="text-slate-100 text-m">Enter Item Name:</p>
                                         <input
                                             type="text"
                                             placeholder="Apple"
@@ -93,7 +93,7 @@ export default function NewItem() {
                                             onChange={handleNameChange}
                                         />
                                         
-                                        <p className="text-slate-100 text-m text-gray-800">Qty:</p>
+                                        <p className="text-slate-100 text-m">Qty:</p>
                                         <input
                                             type="number"
                                             min="1" max="99"

@@ -17,9 +17,19 @@ export default function ItemList() {
 
     return (
         <>
-            <div class="flex items-center justify-center mb-4">
+            <div class="flex justify-center mb-4">
                 <p class="font-sans"> Filter By: </p>
             </div>
+            <div className="flex justify-center space-x-2 ml-auto mb-7">
+                <select className="text-white border-2 border-slate-400 hover: bg-gray-700 p-1 rounded-md"
+                    value={sortBy}
+                    onChange={(e) => setSortBy(e.target.value)}>
+                    <option value="name">Name</option>
+                    <option value="category">Category</option>
+                </select>
+            </div>
+
+            {/*
             <div class="flex items-center justify-center space-x-2 mb-6">
                 <button
                     onClick={() => setSortBy("name")}
@@ -31,6 +41,8 @@ export default function ItemList() {
                     class="text-xs text-white bg-slate-800 border-2 border-slate-700 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
                         Category</button>
             </div>
+            */}
+
             <div>
                 {items.map((item) => (
                     <Item
