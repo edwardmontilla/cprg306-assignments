@@ -19,7 +19,7 @@ export default function NewItem() {
         console.log(newItem);
         setItemCreated(true);
 
-        alert("Item Created!");
+        alert(`Added ${quantity} piece(s) of ${name} to ${category}`);
 
         {/* For future reference, alert timeout 3 sec.
         setTimeout(() => {
@@ -53,6 +53,7 @@ export default function NewItem() {
                     </div>
                 )}
                 */}
+                
                 <div className="min-h-screen bg-sky-950">
                     <div className="flex justify-center">
                         <div className="w-full max-w-md bg-gray-600 border-2 border-gray-500 p-7 rounded-lg shadow-md mt-10">
