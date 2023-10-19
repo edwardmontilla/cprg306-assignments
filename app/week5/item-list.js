@@ -20,7 +20,7 @@ export default function ItemList() {
             <div class="flex items-center justify-center mb-4">
                 <p class="font-sans"> Filter By: </p>
             </div>
-            <div class="flex items-center justify-center space-x-2">
+            <div class="flex items-center justify-center space-x-2 mb-6">
                 <button
                     onClick={() => setSortBy("name")}
                     class="text-xs text-white bg-slate-800 border-2 border-slate-700 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
