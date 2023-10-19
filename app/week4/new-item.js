@@ -19,6 +19,14 @@ export default function NewItem() {
         console.log(newItem);
         setItemCreated(true);
 
+        alert("Item Created!");
+
+        {/* For future reference, alert timeout 3 sec.
+        setTimeout(() => {
+            setItemCreated(false);
+        }, 3000);
+        */}
+
         setName("");
         setQuantity("1");
         setCategory("Produce");
@@ -38,12 +46,13 @@ export default function NewItem() {
                             
         <main>
             <div>
+                {/* This will be an optional alert which I removed for future reference
                 {itemCreated && (
-                    <div className="bg-sky-900 absolute top-0 mt-7 font-sans text-slate-100 text-2xl">
+                    <div className="bg-sky-900 absolute top-0 mt-7 p-3 font-sans text-slate-100 text-2xl flex items-center justify-center">
                         Item Created!
                     </div>
                 )}
-
+                */}
                 <div className="min-h-screen bg-sky-950">
                     <div className="flex justify-center">
                         <div className="w-full max-w-md bg-gray-600 border-2 border-gray-500 p-7 rounded-lg shadow-md mt-10">
@@ -97,6 +106,7 @@ export default function NewItem() {
 
                                     <button
                                         type="submit"
+                                        onClick={handleSubmit}
                                         className="bg-slate-700 hover:bg-slate-500 text-slate-100 border-zinc-300 p-2 ml-1 border rounded-md w-15">
                                         Add
                                     </button>
