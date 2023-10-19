@@ -18,7 +18,7 @@ export default function ItemList() {
     return (
         <>
             <div class="flex items-center justify-center mb-4">
-                <p class="font-sans"> Filter By: </p>
+                <p class="font-sans"> Sort By: </p>
             </div>
             <div class="flex items-center justify-center space-x-2 mb-6">
                 <button
