@@ -28,7 +28,7 @@ export default function Page() {
                 <NewItem onAddItem={handleAddItem} />
             </div>
             <div className="font-medium pb-20 text-white">
-                <ItemList items={this.state.items} />
+                <ItemList items={itemsData} />
             </div>
 
             <div className="absolute left-9 top-8">

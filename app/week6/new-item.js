@@ -36,7 +36,10 @@ export default function NewItem() {
         setQuantity("1");
         setCategory("Produce");
 
+        {/*Part of Alert
         setItemCreated(false);
+        */}
+        
     };
 
     const handleNameChange = (event) => { setName(event.target.value);
