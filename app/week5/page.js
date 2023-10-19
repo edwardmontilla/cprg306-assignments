@@ -5,7 +5,7 @@ import ItemList from "./item-list.js";
 export default function Page() {
     return (
 
-        <main class="h-screen bg-sky-950">
+        <main class="h-full bg-sky-950">
 
             <div class="flex items-center justify-center p-3 pt-10 mb-9">
                 <h1 class="text-5xl font-sans">Shopping List</h1>
