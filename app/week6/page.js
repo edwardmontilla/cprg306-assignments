@@ -1,8 +1,21 @@
+"use client";
+
 import Link from "next/link.js";
 import ItemList from "./item-list.js";
-
+import NewItem from "./new-item.js";
+import itemsData from "./items.json";
+import { useState } from "react";
 
 export default function Page() {
+
+    const [items, setItems] = useState(itemsData);
+
+    const handleAddItem = (newItem) => {
+        setItems([...items, newItem]);
+    };
+
+
+
     return (
 
         <main class="h-full bg-sky-950">
