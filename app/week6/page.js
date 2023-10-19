@@ -21,7 +21,7 @@ export default function Page() {
         <main className="h-full bg-sky-950">
 
             <div className="flex items-center justify-center p-3 pt-10 mb-10">
-                <h1 class="text-5xl font-sans">Shopping List</h1>
+                <h1 className="text-5xl font-sans">Shopping List</h1>
                 
             </div>
             <div className="font-medium pb-20 text-white">
