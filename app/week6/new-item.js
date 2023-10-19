@@ -55,13 +55,13 @@ export default function NewItem() {
                 
                 <div className="min-h-screen bg-sky-950">
                     <div>
-                        <div className="w-full max-w-md bg-gray-600 border-2 border-gray-500 p-7 rounded-lg shadow-md mt-10">
+                        <div>
 
                             <form onSubmit={handleSubmit}>
 
-                                <div className="font-sans pb-7">
+                                <div className="container mx-auto font-sans pb-7 w-full max-w-xs bg-gray-600 border-2 border-gray-500 p-7 rounded-lg shadow-md">
 
-                                    <h1 className="text-slate-100 text-3xl font-sans mb-5">Add New Item</h1>
+                                    <h1 className="text-slate-100 text-3xl font-sans">Add New Item</h1>
 
                                     <div>
                                         <p className="text-slate-100 text-m mb-1">Select Category</p>
