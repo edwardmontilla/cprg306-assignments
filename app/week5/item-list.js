@@ -15,19 +15,19 @@ export default function ItemList() {
     else if (sortBy === "category") {
         items.sort((a,b) => a.category.localeCompare(b.category));
     }
-    setSortBy("category");
 
-
-    
     return (
         <>
-            
-            <button class="text-xs text-white bg-cyan-600 border-2 border-cyan-500 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
-                Name</button>
+            <div class="flex items-center justify-center">
+                <p class="font-sans"> Filter By: </p>
+            </div>
+            <div>
+                <button class="text-xs text-white bg-slate-800 border-2 border-slate-600 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
+                    Name</button>
 
-            <button class="text-xs text-white bg-cyan-600 border-2 border-cyan-500 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
-                Category</button>
-
+                <button class="text-xs text-white bg-slate-800 border-2 border-slate-600 h-8 w-13 max-w-s px-3 rounded-lg hover:bg-cyan-700">
+                    Category</button>
+            </div>
             </>
     );
 
