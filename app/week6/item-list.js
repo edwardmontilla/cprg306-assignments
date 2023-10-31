@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Item from "./item.js";
+import DeleteItem from "./delete-item.js";
 
-export default function ItemList({items}) {
+export default function ItemList({items, onDelete}) {
 
     let [sortBy, setSortBy] = useState("name");
 
@@ -20,6 +21,7 @@ export default function ItemList({items}) {
 
     return (
         <>
+        
             <div class="flex justify-center mb-4">
                 <p class="font-sans"> Sort By: </p>
             </div>
@@ -48,6 +50,9 @@ export default function ItemList({items}) {
 
             <div className="flex justify-center">
                 <div className="grid grid-cols-4 gap-4">
+                    <div>
+                        <DeleteItem items={items} onDelete={onDelete} />
+                    </div>
                     {itemsData.map((item) => (
                         <Item key={item.name} {...item}/>
                     ))}

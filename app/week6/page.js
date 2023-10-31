@@ -15,12 +15,15 @@ export default function Page() {
         setItems([...items, newItem]);
     };
 
-    function handleDelete(name) {
+    const handleDelete = (name) => {
         // search for item to delete by name
         // remove item from items
-        let newItemList = items.filter((item) => item.name !== name);
-        setItems[newItemList];
-    }
+        //let newItemList = items.filter((item) => item.name !== name);
+        //setItems[newItemList];
+        const updatedItems = items.filter((item) => item.name !== name);
+        // Update the state with the new filtered array
+        setItems(updatedItems);
+    };
 
 
     return (
@@ -35,7 +38,7 @@ export default function Page() {
                 <NewItem onAddItem={ handleAddItem } />
             </div>
             <div className="font-medium pb-20 text-white">
-                <ItemList items={ items } />
+                <ItemList items={ items } onDelete={handleDelete} />
             </div>
 
             <div className="absolute left-9 top-8">
