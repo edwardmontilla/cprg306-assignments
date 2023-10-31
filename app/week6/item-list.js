@@ -43,16 +43,17 @@ export default function ItemList() {
             </div>
             */}
 
-            <div>
-                {items.map((item) => (
-                    <Item
-                        name={item.name}
-                        quantity={item.quantity}
-                        category={item.category}
-                    />
-                ))}
+            <div className="flex justify-center">
+                <div className="grid grid-cols-4 gap-4">
+                    {items.map((item) => (
+                        <Item
+                            name={item.name}
+                            quantity={item.quantity}
+                            category={item.category}
+                        />
+                    ))}
+                </div>
             </div>
-
 
 
         </>

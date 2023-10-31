@@ -24,10 +24,10 @@ export default function Page() {
                 <h1 className="text-5xl font-sans">Shopping List</h1>
                 
             </div>
-            <div className="font-medium pb-20 text-white">
+            <div className="font-medium pb-5 text-white">
                 <NewItem onAddItem={ handleAddItem } />
             </div>
-            <div className="font-medium pb-20 text-white">
+            <div className="justify-center font-medium pb-20 text-white">
                 <ItemList items={ itemsData } />
             </div>
 
