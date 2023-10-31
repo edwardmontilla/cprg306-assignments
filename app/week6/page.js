@@ -15,6 +15,13 @@ export default function Page() {
         setItems([...items, newItem]);
     };
 
+    function handleDelete(name) {
+        // search for item to delete by name
+        // remove item from items
+        let newItemList = items.filter((item) => item.name !== name);
+        setItems[newItemList];
+    }
+
 
     return (
 
