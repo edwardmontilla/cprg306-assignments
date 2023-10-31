@@ -3,42 +3,39 @@
 
 import { useState } from "react";
 
-export default function NewItem() {
+export default function NewItem({onAddItem}) {
     const [name, setName] = useState("");
     const [quantity , setQuantity] = useState("1");
     const [category, setCategory] = useState("Produce");
-    const [itemCreated, setItemCreated] = useState(false);
+    //const [itemCreated, setItemCreated] = useState(false);
 
-    const onAddItem = {
-        name,
-        quantity,
-        category,
-    };
-
-    const handleSubmit = (event) => { event.preventDefault();
+    const handleSubmit = (items) => { items.preventDefault();
     
         const newItem = {
-            name,
-            quantity,
-            category,
+            name: name,
+            quantity: quantity,
+            category: category,
         };
-        console.log(newItem);
-        setItemCreated(true);
 
-        {/*For future reference, alert timeout 3 sec.
-        alert(`Added ${quantity} piece(s) of ${name} to ${category}`);
-        setTimeout(() => {
-            setItemCreated(false);
-        }, 3000);
-        */}
+        onAddItem(newItem);
+        
+        // console.log(newItem);
+        // setItemCreated(true);
+
+        // {/*For future reference, alert timeout 3 sec.
+        // alert(`Added ${quantity} piece(s) of ${name} to ${category}`);
+        // setTimeout(() => {
+        //     setItemCreated(false);
+        // }, 3000);
+        // */}
 
         setName("");
         setQuantity("1");
         setCategory("Produce");
 
-        {/*Part of Alert
-        setItemCreated(false);
-        */}
+        // {/*Part of Alert
+        // setItemCreated(false);
+        // */}
         
     };
 
@@ -65,7 +62,6 @@ export default function NewItem() {
                 <div className=" bg-sky-950">
                     <div>
                         <div>
-
                             <form onSubmit={handleSubmit}>
                                 <div className="container mx-auto font-sans pb-7 w-full max-w-xs bg-gray-600 border-2
                                  border-gray-500 p-7 rounded-lg shadow-md">
@@ -113,7 +109,7 @@ export default function NewItem() {
 
                                     <button
                                         type="submit"
-                                        onClick={handleSubmit}
+                                        
                                         className="bg-slate-700 hover:bg-slate-500 text-slate-100 border-zinc-300 p-2 ml-1 border rounded-md w-15">
                                         Add
                                     </button>

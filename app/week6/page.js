@@ -8,12 +8,12 @@ import { useState } from "react";
 
 export default function Page() {
 
-    const [items, setItems] = useState(itemsData);
+    const [items, setItems] = useState(
+        itemsData.map((items) => ({...items})));
 
     const handleAddItem = (newItem) => {
         setItems([...items, newItem]);
     };
-
 
 
     return (
@@ -27,8 +27,8 @@ export default function Page() {
             <div className="font-medium pb-5 text-white">
                 <NewItem onAddItem={ handleAddItem } />
             </div>
-            <div className="justify-center font-medium pb-20 text-white">
-                <ItemList items={ itemsData } />
+            <div className="font-medium pb-20 text-white">
+                <ItemList items={ items } />
             </div>
 
             <div className="absolute left-9 top-8">

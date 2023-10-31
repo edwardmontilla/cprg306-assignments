@@ -2,18 +2,21 @@
 
 import { useState } from "react";
 import Item from "./item.js";
-import items from "./items.json";
 
-export default function ItemList() {
+export default function ItemList({items}) {
+
+    let [sortBy, setSortBy] = useState("name");
+
+    let itemsData = items.sort((a, b) => {
     
-    const [sortBy, setSortBy] = useState("name");
-    
-    if (sortBy === "name") {
-        items.sort((a, b) => a.name.localeCompare(b.name));
-    }
-    else if (sortBy === "category") {
-        items.sort((a,b) => a.category.localeCompare(b.category));
-    }
+        if (sortBy === "name") {
+            return a.name.localeCompare(b.name);
+        }
+        else if (sortBy === "category") {
+            return a.category.localeCompare(b.category);
+        }
+        return 0;
+    });
 
     return (
         <>
@@ -45,18 +48,14 @@ export default function ItemList() {
 
             <div className="flex justify-center">
                 <div className="grid grid-cols-4 gap-4">
-                    {items.map((item) => (
-                        <Item
-                            name={item.name}
-                            quantity={item.quantity}
-                            category={item.category}
-                        />
+                    {itemsData.map((item) => (
+                        <Item key={item.name} {...item}/>
                     ))}
                 </div>
             </div>
 
 
         </>
-    );
+    )
 
 }
