@@ -25,10 +25,10 @@ export default function Page() {
                 
             </div>
             <div className="font-medium pb-20 text-white">
-                <NewItem onAddItem={handleAddItem} />
+                <NewItem onAddItem={ handleAddItem } />
             </div>
             <div className="font-medium pb-20 text-white">
-                <ItemList items={itemsData} />
+                <ItemList items={ itemsData } />
             </div>
 
             <div className="absolute left-9 top-8">
