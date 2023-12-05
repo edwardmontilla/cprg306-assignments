@@ -42,6 +42,12 @@ export default function Page() {
               <Link href="/week8">{"\n"}Week 8</Link>
             </ul>
             <ul class="mb-2 hover:underline underline-offset-2">  
+              <Link href="/week9">{"\n"}Week 9</Link>
+            </ul>
+            <ul class="mb-2 hover:underline underline-offset-2">  
+              <Link href="/week10">{"\n"}Week 10</Link>
+            </ul>
+            <ul class="mb-2 hover:underline underline-offset-2">  
               <Link href="/museum_api">{"\n"}Demo_API</Link>
             </ul>
 
