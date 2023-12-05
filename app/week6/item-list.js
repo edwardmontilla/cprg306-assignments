@@ -50,9 +50,11 @@ export default function ItemList({items, onDelete}) {
 
             <div className="flex justify-center">
                 <div className="grid grid-cols-4 gap-4">
+                    {/* deletes item 
                     <div>
                         <DeleteItem items={items} onDelete={onDelete} />
                     </div>
+                     */}
                     {itemsData.map((item) => (
                         <Item key={item.name} {...item}/>
                     ))}

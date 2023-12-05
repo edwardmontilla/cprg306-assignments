@@ -10,7 +10,7 @@ export default function Item ({ name, quantity, category, onDelete }) {
                 </div>
                 <div className="flex justify-end">
                     <div className="bg-slate-700 hover:bg-slate-500 text-slate-100 border-zinc-300 p-2 ml-1 border rounded-md w-max">
-                        <button onClick={() => onDelete(name)}>Delete</button>
+                        {/* <button onClick={() => onDelete(name)}>Delete</button> */}
                     </div>
                 </div>
             </div>
